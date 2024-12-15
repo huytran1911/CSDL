@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B60CA6F-50B4-4856-9727-27D59DD3EF92}</ProjectGuid>
+    <ProjectGuid>{4DB63A17-D0A7-48C1-839E-A77CA0069845}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CSDLNCProject</RootNamespace>
     <AssemblyName>CSDLNCProject</AssemblyName>
