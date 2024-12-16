@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSDLNCProject
 {
-    public partial class FormUsers : Form
+    public partial class ThongKe : Form
     {
-        public FormUsers()
+        public ThongKe()
         {
             InitializeComponent();
         }

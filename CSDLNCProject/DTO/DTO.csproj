@@ -135,6 +135,7 @@
   <ItemGroup>
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateNhanVienDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

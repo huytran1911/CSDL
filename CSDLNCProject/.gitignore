@@ -1,25 +1,17 @@
-# Ignore Visual Studio files
-*.exe
+# Ignore Visual Studio & Build files
+*.vsidx
+*.vs/
+*.suo
+*.user
+bin/
+obj/
 *.dll
 *.pdb
-*.obj
-*.bin
-*.user
-*.suo
-*.csproj.user
-*.vs/
-Debug/
-Release/
-
-# Ignore build and publish directories
+*.log
+*.tmp
 publish/
 out/
 
-# Ignore system files
-Thumbs.db
-*.DS_Store
-
-# Ignore temporary files
-*.log
-*.tmp
-*.bak
+# Ignore temporary & layout files
+*.backup.json
+DocumentLayout.json
