@@ -1,37 +1,29 @@
 ﻿using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DTO;
+using System.Collections.Generic;
 
 namespace DAL
 {
-    public class NhanVienDAL:DatabaseConnection
+    public class NhanVienDAL : DatabaseConnection
     {
+        private readonly IMongoCollection<NhanVienDTO> collection;
 
-        public static IMongoCollection<NhanVienDTO> GetNhanVienCollection()
+        // Constructor khởi tạo collection
+        public NhanVienDAL()
         {
-            var database = DatabaseConnection.ConnectToMongoService(); // Kết nối và lấy database
-            return database.GetCollection<NhanVienDTO>("nhanvien");  // Lấy collection "nhanvien"
+            collection = GetNhanVienCollection();
         }
+
+        private static IMongoCollection<NhanVienDTO> GetNhanVienCollection()
+        {
+            var database = DatabaseConnection.ConnectToMongoService();
+            return database.GetCollection<NhanVienDTO>("nhanvien");
+        }
+
+        // Lấy danh sách tất cả nhân viên
         public List<NhanVienDTO> GetAllNhanVien()
         {
-            var collection = GetNhanVienCollection();
-            return collection.Find(nv => true).ToList(); // Trả về danh sách nhân viên
-        }
-
-        public NhanVienDTO GetNhanVienById(int manhanvien)
-        {
-            var collection = GetNhanVienCollection();
-            return collection.Find(nv => nv.manhanvien == manhanvien).FirstOrDefault();
-        }
-
-        public void InsertNhanVien(NhanVienDTO nhanVien)
-        {
-            var collection = GetNhanVienCollection();
-            collection.InsertOne(nhanVien);
+            return collection.Find(nv => true).ToList();
         }
     }
 }

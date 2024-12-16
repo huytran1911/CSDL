@@ -1,0 +1,25 @@
+# Ignore Visual Studio files
+*.exe
+*.dll
+*.pdb
+*.obj
+*.bin
+*.user
+*.suo
+*.csproj.user
+*.vs/
+Debug/
+Release/
+
+# Ignore build and publish directories
+publish/
+out/
+
+# Ignore system files
+Thumbs.db
+*.DS_Store
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
