@@ -202,5 +202,11 @@ namespace CSDLNCProject
             Luong luong = new Luong();
             luong.Show();
         }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKe thongKe = new ThongKe();
+            thongKe.Show();
+        }
     }
 }

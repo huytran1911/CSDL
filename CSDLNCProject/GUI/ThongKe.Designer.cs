@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textThuong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textLuongCoBan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textTenNhanVien = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textMaNhanVien = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateStart = new System.Windows.Forms.DateTimePicker();
+            this.dateNgayNhanLuong = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textSoNgayNghi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textLuongNhanDuoc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvThongKe = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,16 +58,6 @@
             this.label1.Size = new System.Drawing.Size(369, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thống kê báo cáo ";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 301);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1004, 356);
-            this.dataGridView1.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -85,12 +75,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tìm Nhân Viên";
             // 
-            // textBox4
+            // textThuong
             // 
-            this.textBox4.Location = new System.Drawing.Point(185, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 22);
-            this.textBox4.TabIndex = 19;
+            this.textThuong.Location = new System.Drawing.Point(185, 235);
+            this.textThuong.Name = "textThuong";
+            this.textThuong.Size = new System.Drawing.Size(226, 22);
+            this.textThuong.TabIndex = 19;
             // 
             // label4
             // 
@@ -101,12 +91,12 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Thưởng";
             // 
-            // textBox5
+            // textLuongCoBan
             // 
-            this.textBox5.Location = new System.Drawing.Point(185, 195);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 22);
-            this.textBox5.TabIndex = 17;
+            this.textLuongCoBan.Location = new System.Drawing.Point(185, 195);
+            this.textLuongCoBan.Name = "textLuongCoBan";
+            this.textLuongCoBan.Size = new System.Drawing.Size(226, 22);
+            this.textLuongCoBan.TabIndex = 17;
             // 
             // label5
             // 
@@ -117,12 +107,12 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Lương cơ bản";
             // 
-            // textBox3
+            // textTenNhanVien
             // 
-            this.textBox3.Location = new System.Drawing.Point(185, 159);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 22);
-            this.textBox3.TabIndex = 15;
+            this.textTenNhanVien.Location = new System.Drawing.Point(185, 159);
+            this.textTenNhanVien.Name = "textTenNhanVien";
+            this.textTenNhanVien.Size = new System.Drawing.Size(226, 22);
+            this.textTenNhanVien.TabIndex = 15;
             // 
             // label3
             // 
@@ -133,12 +123,12 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Tên nhân viên";
             // 
-            // textBox2
+            // textMaNhanVien
             // 
-            this.textBox2.Location = new System.Drawing.Point(185, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 22);
-            this.textBox2.TabIndex = 13;
+            this.textMaNhanVien.Location = new System.Drawing.Point(185, 119);
+            this.textMaNhanVien.Name = "textMaNhanVien";
+            this.textMaNhanVien.Size = new System.Drawing.Size(226, 22);
+            this.textMaNhanVien.TabIndex = 13;
             // 
             // label6
             // 
@@ -149,16 +139,16 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Mã nhân viên";
             // 
-            // dateStart
+            // dateNgayNhanLuong
             // 
-            this.dateStart.CustomFormat = "dd/MM/yyyy";
-            this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateStart.Location = new System.Drawing.Point(640, 160);
-            this.dateStart.MaxDate = new System.DateTime(9998, 12, 1, 0, 0, 0, 0);
-            this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(226, 22);
-            this.dateStart.TabIndex = 24;
-            this.dateStart.Value = new System.DateTime(2024, 12, 15, 0, 0, 0, 0);
+            this.dateNgayNhanLuong.CustomFormat = "dd/MM/yyyy";
+            this.dateNgayNhanLuong.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgayNhanLuong.Location = new System.Drawing.Point(640, 160);
+            this.dateNgayNhanLuong.MaxDate = new System.DateTime(9998, 12, 1, 0, 0, 0, 0);
+            this.dateNgayNhanLuong.Name = "dateNgayNhanLuong";
+            this.dateNgayNhanLuong.Size = new System.Drawing.Size(226, 22);
+            this.dateNgayNhanLuong.TabIndex = 24;
+            this.dateNgayNhanLuong.Value = new System.DateTime(2024, 12, 15, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -169,12 +159,12 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Ngày nhận lương";
             // 
-            // textBox7
+            // textSoNgayNghi
             // 
-            this.textBox7.Location = new System.Drawing.Point(640, 122);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(226, 22);
-            this.textBox7.TabIndex = 22;
+            this.textSoNgayNghi.Location = new System.Drawing.Point(640, 122);
+            this.textSoNgayNghi.Name = "textSoNgayNghi";
+            this.textSoNgayNghi.Size = new System.Drawing.Size(226, 22);
+            this.textSoNgayNghi.TabIndex = 22;
             // 
             // label8
             // 
@@ -185,12 +175,12 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Số ngày nghỉ";
             // 
-            // textBox6
+            // textLuongNhanDuoc
             // 
-            this.textBox6.Location = new System.Drawing.Point(640, 198);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(226, 22);
-            this.textBox6.TabIndex = 26;
+            this.textLuongNhanDuoc.Location = new System.Drawing.Point(640, 198);
+            this.textLuongNhanDuoc.Name = "textLuongNhanDuoc";
+            this.textLuongNhanDuoc.Size = new System.Drawing.Size(226, 22);
+            this.textLuongNhanDuoc.TabIndex = 26;
             // 
             // label9
             // 
@@ -201,32 +191,42 @@
             this.label9.TabIndex = 25;
             this.label9.Text = "Lương nhận được";
             // 
+            // dgvThongKe
+            // 
+            this.dgvThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThongKe.Location = new System.Drawing.Point(15, 315);
+            this.dgvThongKe.Name = "dgvThongKe";
+            this.dgvThongKe.RowHeadersWidth = 51;
+            this.dgvThongKe.RowTemplate.Height = 24;
+            this.dgvThongKe.Size = new System.Drawing.Size(981, 325);
+            this.dgvThongKe.TabIndex = 27;
+            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 654);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(1028, 663);
+            this.Controls.Add(this.dgvThongKe);
+            this.Controls.Add(this.textLuongNhanDuoc);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateStart);
+            this.Controls.Add(this.dateNgayNhanLuong);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textSoNgayNghi);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textThuong);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textLuongCoBan);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textTenNhanVien);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textMaNhanVien);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,22 +235,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textThuong;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textLuongCoBan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textTenNhanVien;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textMaNhanVien;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateStart;
+        private System.Windows.Forms.DateTimePicker dateNgayNhanLuong;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textSoNgayNghi;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textLuongNhanDuoc;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dgvThongKe;
     }
 }
